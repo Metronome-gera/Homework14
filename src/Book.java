@@ -1,15 +1,29 @@
 class Author {
     private String firstName;
-    public  Author (String firstName) {
+    private String lastName;
+
+    public Author(String firstName, String lastName) {
         this.firstName = firstName;
+        this.lastName = lastName;
     }
+
     public String getFirstName() {
         return firstName;
     }
+
+    public String getLastName() {
+        return lastName;
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
+
 public class Book {
     private String title;
     private int ageOfRelyease;
@@ -18,12 +32,15 @@ public class Book {
         this.title = title;
         this.ageOfRelyease = ageOfRelyease;
     }
+
     public String getTitle() {
         return title;
     }
+
     public int getAgeOfRelyease() {
         return ageOfRelyease;
     }
+
     public void setAgeOfRelease(int ageOfRelyease) {
         this.ageOfRelyease = ageOfRelyease;
     }
