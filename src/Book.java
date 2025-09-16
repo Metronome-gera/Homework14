@@ -14,23 +14,20 @@ class Author {
     public String getLastName() {
         return lastName;
     }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }
 
 public class Book {
     private String title;
     private int ageOfRelyease;
+    private Author author;
 
-    public Book(String title, int ageOfRelyease) {
+    public Book(String title, int ageOfRelyease, Author author) {
         this.title = title;
         this.ageOfRelyease = ageOfRelyease;
+        this.author = author;
+    }
+
+    public Book(String bushido, int ageOfRelyease) {
     }
 
     public String getTitle() {
@@ -40,9 +37,14 @@ public class Book {
     public int getAgeOfRelyease() {
         return ageOfRelyease;
     }
+    public Author getAuthor() {
+        return author;
+    }
 
     public void setAgeOfRelease(int ageOfRelyease) {
         this.ageOfRelyease = ageOfRelyease;
+
+        
     }
 }
 
