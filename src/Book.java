@@ -14,7 +14,8 @@ public class Book {
         return author;
     }
 
-    public Book(String bushido, int ageOfRelyease) {
+    public Book(String title, int ageOfRelyease) {
+        this(title, ageOfRelyease, null);
     }
 
     public String getTitle() {

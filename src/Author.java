@@ -1,4 +1,5 @@
 public class Author {
+
     private String firstName;
     private String lastName;
 
@@ -7,12 +8,8 @@ public class Author {
         this.lastName = lastName;
     }
 
+
     public String getFirstName() {return firstName;}
-
-    public String getLastName() {
-        return lastName;
-    }
-
-
+    public String getLastName() {return lastName;}
 
 }
